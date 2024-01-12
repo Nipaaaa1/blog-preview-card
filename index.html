@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -12,41 +10,42 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link href="./src/style/output.css" rel="stylesheet" />
-
     <title>Frontend Mentor | Blog preview card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    <main>
-      <span> Learning </span>
-      <p>Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
+  <body
+    class="font-Figtree bg-brightYellow grid h-svh w-full place-items-center antialiased"
+  >
+    <main
+      class="shadow-card flex h-auto w-4/5 flex-col gap-3 rounded-xl border-2 border-black bg-white p-5 sm:max-w-80"
+    >
+      <img
+        class="rounded-xl"
+        src="./src/assets/images/illustration-article.svg"
+        alt="illustration-article"
+      />
+      <p class="bg-brightYellow w-max rounded px-2 py-1 text-xs font-extrabold">
+        Learning
+      </p>
+      <p class="text-xs font-semibold">Published 21 Dec 2023</p>
+      <a
+        href="#"
+        class="hover:text-brightYellow text-lg font-extrabold transition ease-in-out"
+        >HTML & CSS foundations</a
+      >
 
-      <p>
+      <p class="text-grey text-sm">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
 
-      <div>
-        <span> Greg Hooper </span>
+      <div class="mt-2 flex items-center gap-2">
+        <img
+          class="size-8"
+          src="./src/assets/images/image-avatar.webp"
+          alt="image-avatar"
+        />
+        <span class="text-xs font-extrabold"> Greg Hooper </span>
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>
